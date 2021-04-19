@@ -1,7 +1,6 @@
 package it.polito.tdp.nobel;
 
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Set;
 
@@ -76,5 +75,6 @@ public class FXMLController {
 	public void setModel(Model model) {
 		
 		this.model = model;
+		
 	}
 }
