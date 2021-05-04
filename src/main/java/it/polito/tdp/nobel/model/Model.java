@@ -59,13 +59,25 @@ public class Model {
 		if(l == Partenza.size()) 
 			return;
 		
-		for(Esame e : Partenza) {
+		/*for(Esame e : Partenza) {
 			
 			if(!Parziale.contains(e)) {
 				
 				Parziale.add(e);
 				cerca1(Parziale, l+1, m);
 				Parziale.remove(e);
+				
+			}
+			
+		}*/
+		
+		for(int i=l; i<Partenza.size(); i++) {
+			
+			if(!Parziale.contains(Partenza.get(i))) {
+				
+				Parziale.add(Partenza.get(i));
+				cerca1(Parziale, l+1, m);
+				Parziale.remove(Partenza.get(i));
 				
 			}
 			
