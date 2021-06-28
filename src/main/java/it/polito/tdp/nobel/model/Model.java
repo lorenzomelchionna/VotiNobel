@@ -130,6 +130,7 @@ public class Model {
 			somma += (e.getVoto() * e.getCrediti());
 		}
 		
+		
 		return somma/crediti;
 		
 	}
